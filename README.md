@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# React Product App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación en React que permite gestionar productos mediante un formulario. Incluye funcionalidades como un contador, el manejo de estados con `useState` y efectos con `useEffect`, y componentes reutilizables con TypeScript.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Componentes Principales](#componentes-principales)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Características
+- **Formulario Dinámico**: Permite agregar productos con nombre, imagen y precio.
+- **Validaciones**: Comprueba campos obligatorios y formatos válidos para URLs de imágenes.
+- **Gestión de Estados**: Uso de `useState` para manejar la lista de productos.
+- **Componentes Reutilizables**: Incluye un hook genérico para formularios (`useForm`) y varios componentes independientes.
+- **Interactividad**: Contador y ejemplo de uso de efectos para aprendizaje de `useEffect`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/usuario/repo.git
 
-- Configure the top-level `parserOptions` property like this:
+Navega al directorio del proyecto:
+- cd repo
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Instala las dependencias:
+- npm install
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Inicia el servidor de desarrollo:
+- npm start
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Componentes Principales
+- AppProduct: Maneja la lista de productos, integrando el formulario y la visualización de los productos.
+- FormProduct: Formulario para agregar productos con validación.
+- ListProducts: Lista de productos que muestra tarjetas con los detalles de cada producto.
+- ComponentCounter: Contador interactivo.
+- ComponentUseEffect: Demostración de uso de useEffect.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+## Tecnologías Utilizadas
+- React con TypeScript
+- React Bootstrap para estilos
+- Hooks personalizados (useForm) para manejo de formularios
