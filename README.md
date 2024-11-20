@@ -5,12 +5,8 @@ Este proyecto es una aplicación en React que permite gestionar productos median
 ## Tabla de Contenidos
 - [Características](#características)
 - [Instalación](#instalación)
-- [Uso](#uso)
-- [Estructura del Proyecto](#estructura-del-proyecto)
 - [Componentes Principales](#componentes-principales)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ---
 
@@ -24,7 +20,7 @@ Este proyecto es una aplicación en React que permite gestionar productos median
 ## Instalación
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/usuario/repo.git
+   git clone https://github.com/usuario/link
 
 Navega al directorio del proyecto:
 - cd repo
